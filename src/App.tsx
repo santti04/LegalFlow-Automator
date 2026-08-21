@@ -147,8 +147,8 @@ export default function App() {
   if (needsAuth === null) {
     return (
       <div className="flex flex-col h-screen w-full bg-[#f6f4ee] dark:bg-[#091122] text-[#1c2430] dark:text-[#f1f5f9] font-sans items-center justify-center">
-        <div className="flex flex-col items-center gap-3 p-6 border border-[#ded8cb] dark:border-[#1c2e52] bg-[#ffffff] dark:bg-[#0e1930]">
-          <Scale className="w-8 h-8 text-[#2c3e50] dark:text-[#93c5fd]" />
+        <div className="flex flex-col items-center gap-3 p-6 border border-[#ded8cb] dark:border-[#1c2e52] bg-[#ffffff] dark:bg-[#0e1930] shadow-sm">
+          <img src="/logo.svg" alt="LegalFlow Logo" className="w-12 h-12 object-contain" />
           <div className="flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-[#5e6a7d] dark:text-[#93a2b7]">
             <Loader2 className="w-4 h-4 animate-spin text-[#2c3e50] dark:text-[#93c5fd]" />
             <span>Iniciando LegalFlow...</span>
@@ -186,8 +186,8 @@ export default function App() {
           {/* Main Login Box */}
           <div className="w-full bg-[#ffffff] dark:bg-[#0e1930] border border-[#ded8cb] dark:border-[#1c2e52] p-8 text-center space-y-6 shadow-xs">
             {/* Header Icon */}
-            <div className="mx-auto w-14 h-14 bg-[#f0ece1] dark:bg-[#152342] border border-[#ded8cb] dark:border-[#1c2e52] text-[#1e293b] dark:text-[#93c5fd] flex items-center justify-center">
-              <Scale className="w-7 h-7" />
+            <div className="mx-auto w-16 h-16 bg-[#f0ece1] dark:bg-[#152342] border border-[#ded8cb] dark:border-[#1c2e52] p-2 flex items-center justify-center shadow-2xs">
+              <img src="/logo.svg" alt="LegalFlow Logo" className="w-full h-full object-contain" />
             </div>
 
             <div className="space-y-1.5">
@@ -272,11 +272,11 @@ export default function App() {
   return (
     <div className="flex flex-col h-screen w-full bg-[#f6f4ee] dark:bg-[#091122] text-[#1c2430] dark:text-[#f1f5f9] font-sans overflow-hidden">
       {/* Top Classic Header */}
-      <header className="bg-[#ffffff] dark:bg-[#0e1930] border-b border-[#ded8cb] dark:border-[#1c2e52] px-6 py-3 flex justify-between items-center shrink-0 z-20">
+      <header className="bg-[#ffffff] dark:bg-[#0e1930] border-b border-[#ded8cb] dark:border-[#1c2e52] px-6 py-2.5 flex justify-between items-center shrink-0 z-20">
         {/* Brand */}
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 bg-[#1e293b] dark:bg-[#2563eb] text-white flex items-center justify-center">
-            <Scale className="w-4 h-4" />
+          <div className="w-9 h-9 bg-[#f0ece1] dark:bg-[#152342] border border-[#ded8cb] dark:border-[#1c2e52] p-1 flex items-center justify-center shrink-0 shadow-2xs">
+            <img src="/logo.svg" alt="LegalFlow Logo" className="w-full h-full object-contain" />
           </div>
           <div>
             <h1 className="text-sm font-bold tracking-tight text-[#17202a] dark:text-white uppercase flex items-center gap-2">
@@ -372,6 +372,7 @@ export default function App() {
       {/* Classic Footer */}
       <footer className="bg-[#ffffff] dark:bg-[#0e1930] border-t border-[#ded8cb] dark:border-[#1c2e52] px-6 py-2 flex justify-between items-center shrink-0 text-[11px] text-[#5e6a7d] dark:text-[#93a2b7]">
         <div className="flex items-center gap-2">
+          <img src="/logo.svg" alt="LegalFlow" className="w-3.5 h-3.5 object-contain" />
           <span className="font-bold text-[#1e293b] dark:text-[#f1f5f9]">LEGALFLOW</span>
           <span>•</span>
           <span>Extracción Multimodal con IA Gemini</span>
